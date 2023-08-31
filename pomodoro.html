@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap">
+    <link rel="icon"  type="image/png" sizes="16*16" href="logo.png">
+    <title>Pomodoro App</title>
+</head>
+<body>
+    <h1 id="timer-label" contenteditable="true">Study or die</h1>
+    <div class="container">
+        <div class="pomodoro">
+            <div class="custom-alert" id="customAlert">
+                <br><br><br><br><br><br><br><br><br><br>
+                <p id="player-info">Hi, player <span id="player-number">Loading...</span> 
+                Welcome to the<a href="https://media.licdn.com/dms/image/C4E12AQEG9zbXa6R1Yw/article-cover_image-shrink_720_1280/0/1567472591506?e=2147483647&v=beta&t=sGvWZOcAXV7jDMmeAD1_zviFH9r1nr-sZYYzp0cWwm4" 
+                style="color: white;
+                background-color: #da3737;
+                margin: 0 4px;
+                border: 3px solid black;
+                /* border-radius: 10px; */
+                font-weight: bolder;
+                "> Pomodoro </a>
+                Game, Embrace the Fear and Conquer Your Tasks or Face the Consequences. 
+                Click <span style="
+                color: #ff6b6b;
+                font-weight: bold;
+                ">Start</span> to begin.</p>
+                <button id="closeAlertBtn" style="
+                font-size: 20px;
+                width: 50px;
+                height: 45px;
+                ;">x</button>
+            </div>
+            <div class="timer">
+                <p id="time-left">25:00</p>
+            </div>
+            <select id="duration-select">
+                <option value="25">25 Minutes</option>
+                <option value="15">15 Mins Break</option>
+                <option value="5">5 Mins Break</option>
+            </select>
+            <button id="start-stop">Start</button>
+            <button id="reset">Reset</button>
+            <audio id="beep" src="beep.mp3"></audio>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <footer>
+        <p>Made By: <a href="https://github.com/yurialfrance">Yuri Egipto</a></p>
+        <p>&copy; 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

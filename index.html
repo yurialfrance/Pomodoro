@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loader-style.css">
+    <link rel="icon"  type="image/png" sizes="16*16" href="logo.png">
+    <title>Loading Screen</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <div class="loading-screen">
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <circle r="32" cy="40" cx="40"></circle>
+                </svg>
+            </div>
+
+            <div class="loader triangle">
+                <svg viewBox="0 0 86 80">
+                    <polygon points="43 8 79 72 7 72"></polygon>
+                </svg>
+            </div>
+
+            <div class="loader">
+                <svg viewBox="0 0 80 80">
+                    <rect height="64" width="64" y="8" x="8"></rect>
+                </svg>
+            </div>
+
+            <p style="
+            color: aliceblue; 
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: bolder;
+            font-size: medium;"
+            >YUR DEV</p>
+        </div>
+    </div>
+    <div class="hello">
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = 'pomodoro.html';
+            }, 4000);
+        };
+    </script>
+    
+</body>
+</html>
