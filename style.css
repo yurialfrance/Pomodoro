@@ -35,6 +35,7 @@ h1{
 
 #player-info a{
     text-decoration: none;
+    text-align: justify;
 }
 
 #player-number{
